@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ecommerce Admin App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slider_image">Slider Image</string>
+    <string name="upload_slider">Upload Slider</string>
+</resources>

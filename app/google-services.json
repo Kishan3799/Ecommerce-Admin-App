@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1032735805344",
+    "project_id": "ecommerce-app-6ba93",
+    "storage_bucket": "ecommerce-app-6ba93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032735805344:android:004d9433af7209ff0d9ec5",
+        "android_client_info": {
+          "package_name": "com.kishan.ecommercapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032735805344-d05v4tp47sae42drdfps9dpodocqsvrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8dOQBzWw0DBYQJLmQ6JxxXa2sToIZyXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032735805344-d05v4tp47sae42drdfps9dpodocqsvrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032735805344:android:81936617920fdc7f0d9ec5",
+        "android_client_info": {
+          "package_name": "com.kishan.ecommerceadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032735805344-d05v4tp47sae42drdfps9dpodocqsvrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8dOQBzWw0DBYQJLmQ6JxxXa2sToIZyXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032735805344-d05v4tp47sae42drdfps9dpodocqsvrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
