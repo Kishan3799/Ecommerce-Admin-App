@@ -13,7 +13,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.res.ResourcesCompat
 import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
+
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.kishan.ecommerceadminapp.R
@@ -52,7 +52,7 @@ class CategoryFragment : Fragment() {
 
         binding.apply {
             categoryImageView.setOnClickListener {
-                //opening Gallary
+                //opening Gallery
                 val intent = Intent("android.intent.action.GET_CONTENT")
                 intent.type = "image/*"
                 launchGalleryActivity.launch(intent)
@@ -121,8 +121,8 @@ class CategoryFragment : Fragment() {
         db.collection("categories").add(data)
             .addOnSuccessListener {
                 dialog.dismiss()
-                binding.categoryImageView.setImageDrawable(ResourcesCompat.getDrawable(resources, R.drawable.image_preview, null))
-                binding.categoryETName.text = null
+                binding.categoryImageView.setImageDrawable(ResourcesCompat.getDrawable(resources, R.drawable.preview_image, null))
+                binding.categoryETName.setText(R.string.category_name)
                 getCategoryData()
                 Toast.makeText(requireContext(), "Category Updated", Toast.LENGTH_SHORT).show()
             }

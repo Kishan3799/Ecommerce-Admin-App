@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">                                                             ">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="4dp"
         >
 
         <TextView
             android:id="@+id/productNameTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Product Name"
             android:textSize="20sp"
             android:textStyle="bold"
+            tools:text = "Product Name"
             android:layout_marginStart="4dp"
             android:textColor="@color/black"
             android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             />
         <TextView
             android:id="@+id/productPriceTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Price : 2000"
+            tools:text="Price : 2000"
             android:layout_marginStart="4dp"
             android:textStyle="italic"
             android:textSize="18sp"
@@ -39,27 +47,32 @@
             android:layout_marginTop="8dp"
             >
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/cancelBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cancel"
+                android:text="@string/cancel"
                 android:layout_marginHorizontal="6dp"
+                android:background="@drawable/outline_button_bg"
+                android:textColor="@color/pink"
                 android:textAllCaps="false"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:textSize="18sp"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/proceedBtn"
                 android:layout_width="0dp"
+                android:paddingHorizontal="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Dispatched"
+                tools:text="Dispatched"
+                android:textColor="@color/white"
                 android:textAllCaps="false"
+                android:background="@drawable/button_bg"
                 android:layout_marginHorizontal="6dp"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
 
         </LinearLayout>
@@ -67,4 +80,4 @@
 
     </LinearLayout>
 
-</com.google.android.material.card.MaterialCardView>
+</androidx.cardview.widget.CardView>

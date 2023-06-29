@@ -4,4 +4,19 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="slider_image">Slider Image</string>
     <string name="upload_slider">Upload Slider</string>
+    <string name="add_category">Add Category</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_slider">Add Slider</string>
+    <string name="add_order_details">Add Order Details</string>
+    <string name="category_name">Category Name</string>
+    <string name="upload_category">Upload Category</string>
+    <string name="product_name">Product Name</string>
+    <string name="select_cover_image">Select Cover Image</string>
+    <string name="select_product_image">Select Product Image</string>
+    <string name="save_product">Save Product</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_mrp">Product MRP</string>
+    <string name="product_selling_price">Product Selling Price</string>
+    <string name="product_preview">Product_Preview</string>
+    <string name="cancel">Cancel</string>
 </resources>

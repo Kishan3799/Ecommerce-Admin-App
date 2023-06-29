@@ -7,41 +7,33 @@
     android:padding="12dp"
     tools:context=".fragments.HomeFragment">
 
-   <Button
-       android:id="@+id/categoryBtn"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Add Category"
-       android:textSize="24sp"
-       android:textAllCaps="false"
-       android:layout_marginTop="12dp"
-       />
-    <Button
-        android:id="@+id/productBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Product"
-        android:textSize="24sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="12dp"
+
+
+        <Button
+            android:id="@+id/categoryBtn"
+            style="@style/primary_button_style"
+            android:text="@string/add_category"
+           />
+
+        <Button
+            android:id="@+id/productBtn"
+            style="@style/primary_button_style"
+            android:text="@string/add_product"
+            />
+
+        <Button
+            android:id="@+id/sliderBtn"
+            style="@style/primary_button_style"
+            android:text="@string/add_slider"
         />
-    <Button
-        android:id="@+id/sliderBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Slider"
-        android:textSize="24sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="12dp"
-        />
-    <Button
-        android:id="@+id/allOrderBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Order Details"
-        android:textSize="24sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="12dp"
-        />
+
+        <Button
+            android:id="@+id/allOrderBtn"
+            style="@style/primary_button_style"
+            android:text="@string/add_order_details"
+           />
+
+
+
 
 </LinearLayout>

@@ -4,6 +4,7 @@ import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
+import android.opengl.Visibility
 
 import android.os.Bundle
 
@@ -99,6 +100,12 @@ class AddProductFragment : Fragment() {
         if(binding.productNameEt.text.toString().isEmpty()) {
             binding.productNameEt.requestFocus()
             binding.productNameEt.error = "Empty"
+        }else if(binding.productDescriptionEt.text.toString().isEmpty()){
+            binding.productDescriptionEt.requestFocus()
+            binding.productDescriptionEt.error = "Empty"
+        }else if(binding.productMRPEt.text.toString().isEmpty()){
+            binding.productMRPEt.requestFocus()
+            binding.productMRPEt.error = "Empty"
         }else if (binding.productSPEt.text.toString().isEmpty()){
             binding.productSPEt.requestFocus()
             binding.productSPEt.error = "Empty"
@@ -121,7 +128,6 @@ class AddProductFragment : Fragment() {
             .addOnSuccessListener {
                 it.storage.downloadUrl.addOnSuccessListener { image->
                     coverImgUrl = image.toString()
-
                     uploadProductImage()
                 }
             }
@@ -175,6 +181,12 @@ class AddProductFragment : Fragment() {
             dialog.dismiss()
             Toast.makeText(requireContext(), "Product Added", Toast.LENGTH_SHORT).show()
             binding.productNameEt.text = null
+            binding.productDescriptionEt.text = null
+            binding.productSPEt.text = null
+            binding.productMRPEt.text = null
+            binding.productCoverImage.visibility = View.GONE
+            list.clear()
+            listImages.clear()
         }.addOnFailureListener {
             dialog.dismiss()
             Toast.makeText(requireContext(), "Product Not Added", Toast.LENGTH_SHORT).show()

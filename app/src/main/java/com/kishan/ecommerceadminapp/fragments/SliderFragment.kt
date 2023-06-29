@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.res.ResourcesCompat
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
@@ -96,6 +97,7 @@ class SliderFragment : Fragment() {
         db.collection("slider").document("item").set(data)
             .addOnSuccessListener {
                 dialog.dismiss()
+                binding.sliderImageView.setImageDrawable(ResourcesCompat.getDrawable(resources, R.drawable.preview_image, null))
                 Toast.makeText(requireContext(), "Slider Update", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener{

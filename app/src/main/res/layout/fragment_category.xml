@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginTop="12dp"
-        android:src="@drawable/image_preview"
+        android:src="@drawable/preview_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,10 @@
             android:id="@+id/categoryETName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Category Name"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/category_name"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -38,7 +41,9 @@
         android:id="@+id/categoryAddBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Upload Category"
+        android:text="@string/upload_category"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

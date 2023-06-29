@@ -5,6 +5,5 @@
     android:layout_margin="8dp"
     android:padding="12dp"
     android:textSize="18sp"
-    android:textColor="@color/black"
     android:textStyle="bold"
     android:text="textView"/>

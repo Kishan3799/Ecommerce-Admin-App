@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:padding="12dp"
     android:layout_margin="4dp"
+    android:background="@drawable/category_bg"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -14,13 +15,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="category"/>
+        android:contentDescription="null"/>
 
     <TextView
         android:id="@+id/categoryItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        tools:text="Puma"
         android:layout_marginStart="8dp"
         android:textSize="24sp"
         android:textColor="@color/black"
